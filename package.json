@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/towficaziz/tailwind-project/issues"
   },
-  "homepage": "https://github.com/towficaziz/tailwind-project#readme"
+  "homepage": "https://github.com/towficaziz/tailwind-project#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
 }
